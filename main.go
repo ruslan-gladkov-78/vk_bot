@@ -1,7 +1,10 @@
 package main
 
-import "fmt"
+func StartBot() {
+	sd := GetLongPollSessionData(groupID)
+	AccessLongPoll(sd)
+}
 
 func main() {
-	fmt.Println("Hello, world!")
+	StartBot()
 }
